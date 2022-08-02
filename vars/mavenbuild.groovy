@@ -1,4 +1,4 @@
-import com.test.mvnBuild
+import com.test
 
 def call() {
 	def mvnbuild = new mvnBuild(this)
