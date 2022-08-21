@@ -9,6 +9,9 @@ pipeline{
                 {       dir('BUILD'){         
                     sh """git clone https://github.com/davidmoten/maven-demo.git
                     cd maven-demo """                
+                    }
+                    dir ('BUILD/maven-demo')
+                    {
                     mavenbuild()
                     }
                 }
