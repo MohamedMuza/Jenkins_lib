@@ -6,7 +6,8 @@ pipeline{
         stage('Demo'){
             steps{
                 script
-                {       dir('BUILD'){         
+                {       dir('BUILD'){ 
+                cleanWs()
                     sh """git clone https://github.com/davidmoten/maven-demo.git
                     cd maven-demo """                
                     }
