@@ -1,10 +1,10 @@
 package com.test
 
-class mvnBuild implements Serializable {
+class MvnBuild implements Serializable {
    def script
    def folder
 
-	mvnBuild(script){
+	MvnBuild(script){
 		this.script=script
 	}
 
