@@ -9,6 +9,7 @@ class MvnBuild implements Serializable {
 	}
 
 	def clean(){
+		script.sh """echo Muzammil"""
 		script.sh """mvn 'clean'"""
 	}
 	def install(){
