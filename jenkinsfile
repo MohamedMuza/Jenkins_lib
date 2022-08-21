@@ -8,8 +8,7 @@ pipeline{
                 script
                 {       dir('BUILD'){ 
                 cleanWs()
-                    sh """git clone https://github.com/davidmoten/maven-demo.git
-                    cd maven-demo """                
+                    sh """git clone https://github.com/davidmoten/maven-demo.git"""                
                     }
                     dir ('BUILD/maven-demo')
                     {
